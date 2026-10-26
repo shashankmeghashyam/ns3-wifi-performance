@@ -17,4 +17,16 @@ Course project for EECE5155 (Wireless Sensor Networks & IoT), Northeastern Unive
 - Throughput stayed at ~71 Mbps up to 80 m, decreased with distance, and dropped to 0 at 640 m, matching Friis received-power predictions.
 
 ## Files
--
+- task1-adhoc.cc, task2-infra.cc, task3-distance.cc – ns-3 simulation code
+- ns3-wifi-performance-Report.pdf – full lab report with Wireshark analysis
+- Task 3 Capture Files.rar – pcap captures from Task 3
+
+## How to run
+Copy the .cc files into your ns-3 scratch/ folder, then run:
+
+    ./ns3 run task1-adhoc
+    ./ns3 run 'task2-infra --rtsCts=true'
+    ./ns3 run 'task3-distance --distance=320'
+
+## Tools
+ns-3, C++, Wireshark, MATLAB
